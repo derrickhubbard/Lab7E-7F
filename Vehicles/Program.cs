@@ -13,6 +13,18 @@ namespace Vehicles
             myPlane.Drive();
             myPlane.Land();
             myPlane.StopEngine("Whirr");
+            Console.WriteLine("\nJourney by car:");
+            Car myCar = new Car();
+            myCar.StartEngine("Brm brm");
+            myCar.Accelerate();
+            myCar.Drive();
+            myCar.Brake();
+            myCar.StopEngine("Phut phut");
+            Console.WriteLine("\nTesting polymorphism");
+            Vehicle v = myCar;
+            v.Drive();
+            v = myPlane;
+            v.Drive();
         }
 
         static void Main()

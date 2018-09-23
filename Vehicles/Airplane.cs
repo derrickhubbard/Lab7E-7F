@@ -16,5 +16,9 @@ namespace Vehicles
         {
             Console.WriteLine("Landing");
         }
+        public override void Drive()
+        {
+            Console.WriteLine("Flying");
+        }
     }
 }
